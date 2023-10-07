@@ -42,6 +42,14 @@ export const Large = {
   },
 };
 
+/* added but realized this is default
+export const Medium= {
+  args: {
+    size: 'medium',
+    label: 'Button',
+  },
+};*/
+
 export const Small = {
   args: {
     size: 'small',
