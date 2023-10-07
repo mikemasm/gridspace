@@ -1,0 +1,42 @@
+.button {
+  background-color: #003087;
+    border: 0.125rem solid #003087;
+    border-radius: 99px;
+   /* 
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-family: "Canadiana", "Roboto", sans-serif;
+    outline: none;
+    width: 100%;
+    min-width: 7.5rem;
+    margin-bottom: 1rem;*/
+    
+}
+@media only screen and (min-width: 40.0625em) {
+  .button {
+    width: auto;
+  }
+}
+.primary {
+  color: white;
+}
+.secondary { 
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

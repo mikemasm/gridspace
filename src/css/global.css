@@ -1,0 +1,328 @@
+body {
+  /*background-color: grey;*/
+}
+
+section {
+  max-width: 64vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Start Grid layout classes */
+.column-2, .column-3, .column-4, .column-5, .grid-2-10, .grid-3-9, .grid-4-8, .grid-5-7, .grid-7-5, .grid-8-4, .grid-9-3, .grid-10-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  row-gap: 2rem;
+}
+@media only screen and (min-width: 40.0625em) {
+  .column-2, .column-3, .column-4, .column-5, .grid-2-10, .grid-3-9, .grid-4-8, .grid-5-7, .grid-7-5, .grid-8-4, .grid-9-3, .grid-10-2 {
+    -ms-grid-columns: calc(50% - 1rem) 2rem calc(50% - 1rem);
+    grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.column-2.column-no-gap, .column-3.column-no-gap, .column-4.column-no-gap, .column-5.column-no-gap, .grid-2-10.column-no-gap, .grid-3-9.column-no-gap, .grid-4-8.column-no-gap, .grid-5-7.column-no-gap, .grid-7-5.column-no-gap, .grid-8-4.column-no-gap, .grid-9-3.column-no-gap, .grid-10-2.column-no-gap {
+  -ms-grid-columns: 50% 0rem 50%;
+  grid-template-columns: 50% 50%;
+  -moz-column-gap: 0rem;
+       column-gap: 0rem;
+}
+.column-2 p, .column-3 p, .column-4 p, .column-5 p, .grid-2-10 p, .grid-3-9 p, .grid-4-8 p, .grid-5-7 p, .grid-7-5 p, .grid-8-4 p, .grid-9-3 p, .grid-10-2 p {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .column-3 {
+    -ms-grid-columns: calc(33.33% - 1.33rem) 2rem calc(33.33% - 1.33rem) 2rem calc(33.33% - 1.33rem);
+    grid-template-columns: calc(33.33% - 1.33rem) calc(33.33% - 1.33rem) calc(33.33% - 1.33rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .column-3.column-no-gap {
+    -ms-grid-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .column-4 {
+    -ms-grid-columns: calc(25% - 1.5rem) 2rem calc(25% - 1.5rem) 2rem calc(25% - 1.5rem) 2rem calc(25% - 1.5rem);
+    grid-template-columns: calc(25% - 1.5rem) calc(25% - 1.5rem) calc(25% - 1.5rem) calc(25% - 1.5rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .column-4.column-no-gap {
+    -ms-grid-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .column-5 {
+    -ms-grid-columns: calc(20% - 1.6rem) 2rem calc(20% - 1.6rem) 2rem calc(20% - 1.6rem) 2rem calc(20% - 1.6rem) 2rem calc(20% - 1.6rem);
+    grid-template-columns: calc(20% - 1.6rem) calc(20% - 1.6rem) calc(20% - 1.6rem) calc(20% - 1.6rem) calc(20% - 1.6rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .column-5.column-no-gap {
+    -ms-grid-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-2-10 {
+    -ms-grid-columns: calc(20% - 1rem) 2rem calc(80% - 1rem);
+    grid-template-columns: calc(20% - 1rem) calc(80% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-2-10.column-no-gap {
+    -ms-grid-columns: 20% 80%;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-3-9 {
+    -ms-grid-columns: calc(25% - 1rem) 2rem calc(75% - 1rem);
+    grid-template-columns: calc(25% - 1rem) calc(75% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-3-9.column-no-gap {
+    -ms-grid-columns: 25% 75%;
+    grid-template-columns: 25% 75%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-4-8 {
+    -ms-grid-columns: calc(33.33% - 1rem) 2rem calc(66.66% - 1rem);
+    grid-template-columns: calc(33.33% - 1rem) calc(66.66% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-4-8.column-no-gap {
+    -ms-grid-columns: 33.33% 66.66%;
+    grid-template-columns: 33.33% 66.66%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-5-7 {
+    -ms-grid-columns: calc(41.66% - 1rem) 2rem calc(58.33% - 1rem);
+    grid-template-columns: calc(41.66% - 1rem) calc(58.33% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-5-7.column-no-gap {
+    -ms-grid-columns: 41.66% 58.33%;
+    grid-template-columns: 41.66% 58.33%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-7-5 {
+    -ms-grid-columns: calc(58.33% - 1rem) 2rem calc(41.66% - 1rem);
+    grid-template-columns: calc(58.33% - 1rem) calc(41.66% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-7-5.column-no-gap {
+    -ms-grid-columns: 58.33% 41.66%;
+    grid-template-columns: 58.33% 41.66%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-8-4 {
+    -ms-grid-columns: calc(66.66% - 1rem) 2rem calc(33.33% - 1rem);
+    grid-template-columns: calc(66.66% - 1rem) calc(33.33% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-8-4.column-no-gap {
+    -ms-grid-columns: 66.66% 33.33%;
+    grid-template-columns: 66.66% 33.33%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-9-3 {
+    -ms-grid-columns: calc(75% - 1rem) 2rem calc(25% - 1rem);
+    grid-template-columns: calc(75% - 1rem) calc(25% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-9-3.column-no-gap {
+    -ms-grid-columns: 75% 25%;
+    grid-template-columns: 75% 25%;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .grid-10-2 {
+    -ms-grid-columns: calc(80% - 1rem) 2rem calc(20% - 1rem);
+    grid-template-columns: calc(80% - 1rem) calc(20% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-10-2.column-no-gap {
+    -ms-grid-columns: 80% 20%;
+    grid-template-columns: 80% 20%;
+  }
+}
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .column-1-t {
+    /* 1 column on tablet */
+    -ms-grid-columns: 100% !important;
+    grid-template-columns: 100% !important;
+    row-gap: 2rem;
+  }
+
+  .column-3-t {
+    /* 3 column on tablet */
+    -ms-grid-columns: calc(33.33% - 1.33rem) 2rem calc(33.33% - 1.33rem) 2rem calc(33.33% - 1.33rem);
+    grid-template-columns: calc(33.33% - 1.33rem) calc(33.33% - 1.33rem) calc(33.33% - 1.33rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .column-3-t.column-no-gap {
+    -ms-grid-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+
+  .grid-2-10-t {
+    -ms-grid-columns: calc(20% - 1rem) 2rem calc(80% - 1rem);
+    grid-template-columns: calc(20% - 1rem) calc(80% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-2-10-t.column-no-gap {
+    -ms-grid-columns: 20% 80%;
+    grid-template-columns: 20% 80%;
+  }
+
+  .grid-7-5-t {
+    -ms-grid-columns: calc(58.33% - 1rem) 2rem calc(41.66% - 1rem);
+    grid-template-columns: calc(58.33% - 1rem) calc(41.66% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-7-5-t.column-no-gap {
+    -ms-grid-columns: 58.33% 41.66%;
+    grid-template-columns: 58.33% 41.66%;
+  }
+
+  .grid-8-4-t {
+    -ms-grid-columns: calc(66.66% - 1rem) 2rem calc(33.33% - 1rem);
+    grid-template-columns: calc(66.66% - 1rem) calc(33.33% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-8-4-t.column-no-gap {
+    -ms-grid-columns: 66.66% 33.33%;
+    grid-template-columns: 66.66% 33.33%;
+  }
+
+  .grid-8-t {
+    -ms-grid-columns: 66.66% !important;
+    grid-template-columns: 66.66% !important;
+  }
+
+  .grid-9-t {
+    -ms-grid-columns: 75% !important;
+    grid-template-columns: 75% !important;
+  }
+
+  .column-no-row-gap-t {
+    row-gap: 0rem;
+  }
+
+  .column-row-gap-3-t {
+    row-gap: 3rem;
+  }
+
+  .column-row-gap-4-t {
+    row-gap: 4rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .column-no-row-gap-t-down {
+    row-gap: 0rem;
+  }
+
+  .grid-row-1-t-down {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .grid-row-2-t-down {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .grid-2-10-t-down {
+    -ms-grid-columns: calc(20% - 1rem) 2rem calc(80% - 1rem);
+    grid-template-columns: calc(20% - 1rem) calc(80% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .grid-2-10-t-down.column-no-gap {
+    -ms-grid-columns: 20% 80%;
+    grid-template-columns: 20% 80%;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .column-2-m {
+    -ms-grid-columns: calc(50% - 1rem) 2rem calc(50% - 1rem);
+    grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+
+  .column-no-row-gap-m {
+    row-gap: 0rem;
+  }
+
+  .grid-row-1-m {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .grid-row-2-m {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .column-row-gap-3-m {
+    row-gap: 3rem;
+  }
+
+  .column-row-gap-4-m {
+    row-gap: 4rem;
+  }
+}
+@media only screen and (min-width: 64.0625em) {
+  .column-span-2-d {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .column-span-3-d {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+
+  .column-span-4-d {
+    -ms-grid-column-span: 4;
+    grid-column: span 4;
+  }
+}
+/* End Grid layout classes */
+/*# sourceMappingURL=global.css.map */
